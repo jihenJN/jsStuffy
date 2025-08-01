@@ -215,15 +215,9 @@ let userr = {
 
 
 let persons = [];
-function createUser(email, name, lessons) {
-  let person = {
-   email:email,
-   name:name,
-   lessons:lessons
-  };
+function addPerson(person) {
  persons.push(person);
- 
 }
-createUser("jihen@gmail.com", "jihen", [1, 2, 3, 4]);
-createUser("amin@gmail.com", "amin", [1, 2]);
+addPerson({email:"jihen@gmail.com", name: "jihen",lessons: [1, 2, 3, 4]});
+addPerson({email:"yasmine@gmail.com", name: "yasmine",lessons: [ 3, 4]});
 console.log(persons);
