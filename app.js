@@ -169,35 +169,61 @@ console.log(usDollars);
 console.log(auDollars);
 
 // objects
-let user={
-  email:"alexa@gmail.com",
-  password:"test12345",
-  name:"alexa",
-  discord:"alexaDiscord",
-  subscription:"VIP+",
-  lessonsCompleted:[1,2,3]
+let user = {
+  email: "alexa@gmail.com",
+  password: "test12345",
+  name: "alexa",
+  discord: "alexaDiscord",
+  subscription: "VIP+",
+  lessonsCompleted: [1, 2, 3],
+};
+
+console.log(user);
+console.log(user.email);
+
+let users = [
+  {
+    email: "alexa@gmail.com",
+    password: "test12345",
+    name: "alexa",
+    discord: "alexaDiscord",
+    subscription: "VIP+",
+    lessonsCompleted: [1, 2, 3],
+  },
+  {
+    email: "amen@gmail.com",
+    password: "test66",
+    name: "amen",
+    discord: "amenDiscord",
+    subscription: "VIP+",
+    lessonsCompleted: [1, 2, 3, 4, 5],
+  },
+];
+
+console.log(users);
+console.log(users[1].email);
+console.log(users[0].lessonsCompleted.map((element) => element * 3));
+
+let userr = {
+  email: "alexa@gmail.com",
+  password: "test12345",
+  name: "alexa",
+  discord: "alexaDiscord",
+  subscription: "VIP+",
+  lessonsCompleted: [1, 2, 3],
+};
+
+
+let persons = [];
+function createUser(email, name, lessons) {
+  let person = {
+   email:email,
+   name:name,
+   lessons:lessons
+  };
+ persons.push(person);
+ 
 }
-
-console.log(user)
-console.log(user.email)
-
-let users=[{
-  email:"alexa@gmail.com",
-  password:"test12345",
-  name:"alexa",
-  discord:"alexaDiscord",
-  subscription:"VIP+",
-  lessonsCompleted:[1,2,3]
-},
-{
-  email:"amen@gmail.com",
-  password:"test66",
-  name:"amen",
-  discord:"amenDiscord",
-  subscription:"VIP+",
-  lessonsCompleted:[1,2,3,4,5]
-}]
-
-console.log(users)
-console.log(users[1].email)
-console.log(users[0].lessonsCompleted.map((element)=>element*3))
+createUser("jihen@gmail.com", "jihen", [1, 2, 3, 4]);
+createUser("amin@gmail.com", "amin", [1, 2]);
+console.log(persons);
