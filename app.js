@@ -213,11 +213,29 @@ let userr = {
   lessonsCompleted: [1, 2, 3],
 };
 
-
 let persons = [];
 function addPerson(person) {
- persons.push(person);
+  persons.push(person);
 }
-addPerson({email:"jihen@gmail.com", name: "jihen",lessons: [1, 2, 3, 4]});
-addPerson({email:"yasmine@gmail.com", name: "yasmine",lessons: [ 3, 4]});
+addPerson({ email: "jihen@gmail.com", name: "jihen", lessons: [1, 2, 3, 4] });
+addPerson({ email: "yasmine@gmail.com", name: "yasmine", lessons: [3, 4] });
 console.log(persons);
+// the DOM
+// 1rst method
+console.log(document.querySelector("#heading"));
+console.log(document.querySelector(".heading"));
+console.log(document.querySelector("h3"));
+// 2nd method
+console.log(document.getElementById("heading"));
+
+// change element content html
+document.querySelector('h1').innerHTML += "OJS"
+
+// change element style css
+document.querySelector('h3').style.backgroundColor = 'red'
+
+function valid(){
+  document.querySelector('button').style.backgroundColor='green'
+  document.querySelector('button').style.color='white'
+  document.querySelector('button').innerHTML = 'validated'
+}
