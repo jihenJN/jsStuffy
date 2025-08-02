@@ -234,8 +234,17 @@ document.querySelector('h1').innerHTML += "OJS"
 // change element style css
 document.querySelector('h3').style.backgroundColor = 'red'
 
+
+
 function valid(){
+  
   document.querySelector('button').style.backgroundColor='green'
   document.querySelector('button').style.color='white'
   document.querySelector('button').innerHTML = 'validated'
 }
+
+
+function toggleSidebar(){
+console.log(document.querySelector("body").classList.toggle('open'))
+}
+

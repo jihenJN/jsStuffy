@@ -1,0 +1,13 @@
+.sidebar{
+    width: 40%;
+    height: 100vh;
+    position:absolute;
+    right:0;
+    top:0;
+    background-color: rgb(49, 194, 102);
+    display: none;
+}
+
+.open .sidebar{
+    display: block;
+}
